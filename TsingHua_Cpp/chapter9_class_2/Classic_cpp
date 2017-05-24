@@ -16,7 +16,7 @@ class Student
 		void display()
 			{cout<<"num:"<<num<<endl;
 			 cout<<"name:"<<name<<endl;
-			 cout<<"gender"<<gender<<endl;
+			 cout<<"gender:"<<gender<<endl;
 			}
 	private:
 		int num;
@@ -32,3 +32,17 @@ int main()
 	stud2.display();
 	return 0;
 }
+
+
+/*****output****************
+Constructor called.
+num:10010
+name:Wang_li
+gender:f
+Constructor called.
+num:10011
+name:Zhang_fun
+gender:m
+Destructor called.
+Destructor called.
+*************************/
