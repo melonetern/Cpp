@@ -1,0 +1,19 @@
+§ define class
+class Student
+{
+  public:
+    void f1(){...}
+    void display();   //declare inside, define outside
+  private:
+    int num;
+    string name;
+    char gender;
+};
+
+void Student::display()     //define function out of class
+  {cout<<"num:"<<num<<endl;
+   cout<<"name:"<<name<<endl;
+   cout<<"gender:"<<gender<<endl;
+  }
+  
+Student stud1,stud2;
