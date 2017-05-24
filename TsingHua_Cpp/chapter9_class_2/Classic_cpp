@@ -12,7 +12,7 @@ class Student
 			cout<<"Constructor called."<<endl;
 		}
 		~Student()
-		{	cout<<"Destructor called."<<endl;}
+		{	cout<<"Destructor called."<<name<<endl;}
 		void display()
 			{cout<<"num:"<<num<<endl;
 			 cout<<"name:"<<name<<endl;
@@ -43,6 +43,7 @@ Constructor called.
 num:10011
 name:Zhang_fun
 gender:m
-Destructor called.
-Destructor called.
+Destructor called.Zhang_fun
+Destructor called.Wang_li
 *************************/
+//先构造的后析构，后构造的先析构
