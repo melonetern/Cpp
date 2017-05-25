@@ -58,3 +58,35 @@ declare and define n in file1.cpp, declare in file2.cpp with extern
 
 内部函数， static int fun(int a,int b);只能被本文件使用
 外部函数， extern或者不加，默认为外部函数
+
+
+
+&pointer of function address
+用函数指针变量调用函数
+int max(int x, int y){...}; 
+int (*p_max)(int,int);   //定义函数入口地址指针
+int a,b;
+p_max=max;
+p_max(a,b);   //调用了函数max()
+
+用指向函数的指针作函数参数
+比如求上下限相同的不同方程的定积分
+double integral(double a,double b, double (*fun)(double)){...};
+方程名可做入口地址传递，例如：
+double f1(double x){return 1+x;}
+double f2(double x){return 2x+3;}
+integral(0,3,f1); //对方程f1在区间0,3作积分
+
+返回指针值的函数
+int *a(int x,int y);
+
+指针数组
+int *a[10]; //元素都为指针
+
+指向一维数组的指针变量
+int (*a)[4];
+
+指向指针的指针
+char *(*p);
+
+
