@@ -1,9 +1,25 @@
+
+/*****frequently used string array functions************
+
 #include <string>
-/*******************************************************
-frequently used string functions
 strcat(char[],const char[]);  // string catenate
 strcpy(char[],const char[]);  // string copy
 strcmp(const char[],const char[]; //string compare
 strlen(const char[]); //string length
+
+********************************************************/
+
+/**********string class**********************************
+
+#include <string>
+string str1 = "China";
+string str2 = "Canada";
+str1 = str2;  // diff. length works
+str2[3] = 'n'; // "Cannda"  
+//diff. from string array, there's no '\0' in mem.
+string str3;
+str3 = str1 + str2; //"ChinaCannda"
+string name[5] = {"Zhang","Li","Fun","Wang","Tan"};
+
 
 ********************************************************/
