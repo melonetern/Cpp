@@ -1,0 +1,9 @@
+#include <string>
+/*******************************************************
+frequently used string functions
+strcat(char[],const char[]);  // string catenate
+strcpy(char[],const char[]);  // string copy
+strcmp(const char[],const char[]; //string compare
+strlen(const char[]); //string length
+
+********************************************************/
