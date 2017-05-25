@@ -46,3 +46,16 @@ int main()
 
 //--------------destructor------------------------------
 see classic_cpp
+
+
+
+//------------array of class-------------------------------
+Student stud[30];
+Student::Student(int=1001;int=18;int=60);
+Student stud[3] = {60,70,78}; // each as one of the first parameter
+
+Student stud[3] ={
+  Student(1001,18,87),
+  Student(1002,19,76),
+  student(1003,18,72)
+};
