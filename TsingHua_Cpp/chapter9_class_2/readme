@@ -59,3 +59,11 @@ Student stud[3] ={
   Student(1002,19,76),
   student(1003,18,72)
 };
+
+
+const型数据的小结
+Time const t1;或 const Time t1;                 t1是常对象，其值任何情况下都不能改变
+void Time::fun() const                          fun是Time类中的常成员函数，可以引用，但不能修改本类中的数据成员
+Time * const p,                                 p是指向Time类对象的常指针，p的值(即p的指向)不能改变
+const Time *p;                                  p是指向Time类对象的指针，其指向的类对象的值不能通过指针来改变
+Time &t1 =t;                                    t1是Time类对象t的引用，t和t1指向同一段内存空间
